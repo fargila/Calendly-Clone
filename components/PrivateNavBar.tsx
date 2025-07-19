@@ -3,6 +3,7 @@
 import { PrivateNavLinks } from "@/constants";
 import { cn } from "@/lib/utils";
 import { SignedIn, UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -15,8 +16,7 @@ export default function PrivateNavBar(){
         shadow-2xl mb-28">
             <Link href="/events" className="flex items-center
             gap-1 hover:scale-150 duration-500">
-                {/* Need to add an image here :^( */}
-                <img src="/app/assets/" alt="Logo" 
+                <Image src="/app/assets/logo.svg" alt="Logo" 
                 width={60} height={60}/>
             </Link>
 

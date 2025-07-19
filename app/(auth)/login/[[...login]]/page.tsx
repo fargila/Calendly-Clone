@@ -1,11 +1,12 @@
 import { SignIn } from "@clerk/nextjs";
+import Image from "next/image";
 
 export default function LoginPage(){
     return(
         <main className="flex flex-col items-center p-5 gap-10
         animate-fade-in">
             {/* Need to add an image here :^( */}
-            <img src="/app/assets/" alt="Logo" 
+            <Image src="/app/assets/logo.svg" alt="Logo" 
             width={100} height={100}/>
 
             <div className="mt-3">

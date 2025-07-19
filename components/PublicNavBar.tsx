@@ -1,6 +1,7 @@
 import { SignInButton, SignUpButton } from "@clerk/nextjs"
 import Link from "next/link"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 export default function PublicNavBar(){
     return(
@@ -9,8 +10,7 @@ export default function PublicNavBar(){
         shadow-2xl">
             <Link href="/login" className="flex items-center
             gap-1 hover:scale-150 duration-500">
-                {/* Need to add an image here :^( */}
-                <img src="/app/assets/" alt="Logo" 
+                <Image src="/app/assets/logo.svg" alt="Logo" 
                 width={60} height={60}/>
             </Link>
 
